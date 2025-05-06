@@ -7,4 +7,4 @@ build applications that use Snowflake as a back end. Including: Streamlit (Pytho
 
 [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/): This app uses a database in Snowflake to store orders for Smoothies and gives nutritional information about them.
 
-[Pending Smoothies Orders](https://melaniessmoothies-pending.streamlit.app/): This app marks the orders submitted in the [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/) as filled and removes from the pending orders table.
+[Pending Smoothies Orders](https://melaniessmoothies-pending.streamlit.app/): This app marks the orders submitted in the [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/) as filled and removes them from the pending orders table.
