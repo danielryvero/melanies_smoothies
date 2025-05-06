@@ -8,3 +8,5 @@ build applications that use Snowflake as a back end. Including: Streamlit (Pytho
 [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/): This app uses a database in Snowflake to store orders for Smoothies and gives nutritional information about them.
 
 [Pending Smoothies Orders](https://melaniessmoothies-pending.streamlit.app/): This app marks the orders submitted in the [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/) as filled and removes them from the pending orders table.
+
+It uses Python to collect inputs and write SQL code into a database already set up in Snowflake. The code is really useful if you are following this workshop, but the Snowflake account linked to this app already expired. So good luck with your app!
