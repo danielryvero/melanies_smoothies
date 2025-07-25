@@ -10,3 +10,6 @@ build applications that use Snowflake as a back end. Including: Streamlit (Pytho
 [Pending Smoothies Orders](https://melaniessmoothies-pending.streamlit.app/): This app marks the orders submitted in the [Customize your Smoothie](https://melaniessmoothies-danielryvero.streamlit.app/) as filled and removes them from the pending orders table.
 
 It uses Python to collect inputs and write SQL code into a database already set up in Snowflake. The code is really useful if you are following this workshop, but the Snowflake account linked to this app already expired. So good luck with your app!
+
+
+<img width="734" height="242" alt="streamlit_app" src="https://github.com/user-attachments/assets/8950521d-1563-425b-b8ba-75674972083e" />
