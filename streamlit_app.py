@@ -50,7 +50,9 @@ if ingredients_list:
             #extract nitrition data
             nutrition_data=data["nutritions"]
             #convert to proper table
-            df_nutrition=st.dataframe(nutrition_data.items(), columns=["Nutrient", "Value"])
+            df_nutrition=pd.DataFrame(nutrition_data.items(), columns=["Nutrient", "Value"])
+            #converto to stramlit dataframe
+            st_df_nutrition = st.dataframe(df_nutrition)
             #show as table
             st.table(df_nutrition)
         else:
