@@ -52,9 +52,9 @@ if ingredients_list:
             #convert to proper table
             df_nutrition=pd.DataFrame(nutrition_data.items(), columns=["Nutrient", "Value"])
             #converto to stramlit dataframe
-            st_df_nutrition = st.dataframe(df_nutrition)
+            st_df_nutrition = st.dataframe(df_nutrition, hide_index=True)
             #show as table
-            st.table(df_nutrition)
+            #st.table(df_nutrition)
         else:
             st.error("No information for this fruit")
                                       
