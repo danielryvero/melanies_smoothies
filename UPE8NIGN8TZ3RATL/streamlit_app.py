@@ -1,7 +1,7 @@
 # Import python packages
 import streamlit as st
 from snowflake.snowpark.functions import col
-#from snowflake.snowpark.context import get_active_session #add this only when working inside snowflake
+from snowflake.snowpark.context import get_active_session #add this only when working inside snowflake
 import requests
 import pandas as pd
 
