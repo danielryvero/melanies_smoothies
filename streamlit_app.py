@@ -44,8 +44,20 @@ if ingredients_list:
         st.subheader(fruit_chosen + ' Nutrition Information')
         #smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on) #will try another Api since this one is down
         smoothiefroot_response = requests.get("https://fruityvice.com/api/fruit/" + search_on)
+
+        if smoothiefroot_response.status_code == 200:
+            data = smoothiefroot_response.json()
+            #extract nitrition data
+            nutrition_data=data["nutritions"]
+            #convert to proper table
+            df_nutrition=pd.dataframe(nutrition_data.items(), columns=["Nutrient", "Value"])
+            #show as table
+            st.table(df_nutrition)
+        else:
+            st.error("No information for this fruit")
+                                      
         #st.text(smoothiefroot_response.json())
-        sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+        #sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
     #st.write(ingredients_string)
  
