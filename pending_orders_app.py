@@ -1,14 +1,14 @@
 import streamlit as st
 import time
 from snowflake.snowpark.functions import col, when_matched
-from snowflake.snowpark.context import get_active_session
 
 #title to show
 st.title(":cup_with_straw: Pending Smoothie Orders! :cup_with_straw:")
 st.write("Orders that need to be filled.")
 
-# get snowflake session
-session = get_active_session()
+# get session
+cnx = st.connection("snowflake")
+session = cnx.session()
 
 # load pending orders
 def load_pending_orders():
