@@ -1,4 +1,5 @@
-   ***Streamlit Apps!***
+## ❄️📊 Streamlit not in Snowflake (SniS) and Stramlit in Snowflake (SiS) Apps 🚀
+
 
 This apps were developed as part of the [Hands-On Essentials: Data Application Builders Workshop](https://achieve.snowflake.com/f636883e-f352-4995-9d64-8aef54291a83#acc.ihnZdJz5) course.
 
