@@ -5,6 +5,7 @@ This repository contains the code used to develop internal applications using **
 ---
 
 ## 📁 Project Structure
+```bash
 /Snowflake_internal_Apps/
 │
 ├── fruits_available_for_smoothies.txt # Text file with available fruit names
@@ -12,3 +13,4 @@ This repository contains the code used to develop internal applications using **
 ├── streamlit_app.py # Make your orders and display fruit nutrition info
 ├── pending_orders.py # Streamlit app to manage smoothie orders
 └── README.md # You are here
+```
