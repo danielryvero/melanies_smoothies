@@ -15,6 +15,11 @@ create file format smoothies.public.two_headerrow_pct_delim
    trim_space = TRUE
 ;
 
+---now you should create a SNOWFLAKE MANAGED STAGE in the PUBLIC 
+---schema of the database. Call it MY_UPLOADED_FILES.
+---Upload the content of the "fruits_available_for_smoothies.txt" 
+---file in the previous folder to it
+
 ---query data but still not load it
 select $1, $2, $3, $4, $5 
 from @SMOOTHIES.PUBLIC.MY_UPLOADED_FILES/fruits_available_for_smoothies.txt
@@ -39,10 +44,13 @@ on_error = abort_statement
 purge = true
 ;
 
+---create a sequence, you will need it to insert data later
+CREATE OR REPLACE SEQUENCE ORDER_SEQ 
+START = 1 INCREMENT = 1;
+
 ---check data in table
 select *
 from SMOOTHIES.PUBLIC.FRUIT_OPTIONS;
-
 
 ---create table for orders
 CREATE OR REPLACE TABLE ORDERS (
